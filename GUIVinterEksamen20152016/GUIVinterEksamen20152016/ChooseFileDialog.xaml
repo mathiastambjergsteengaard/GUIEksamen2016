@@ -1,0 +1,24 @@
+﻿<Window x:Class="GUIVinterEksamen20152016.ChooseFileDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUIVinterEksamen20152016"
+        mc:Ignorable="d"
+        Title="ChooseFileDialog" Height="300" Width="300">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Height="249" Margin="10,10,0,0" VerticalAlignment="Top" Width="272">
+            <Label x:Name="label" Content="Choose Quiz File"/>
+            
+            <WrapPanel Height="28">
+                <TextBox x:Name="FilePathTbx" Height="18" TextWrapping="Wrap"  Width="221" Margin="5" VerticalAlignment="Center" Text="{Binding FilePath}"/>
+                <Button x:Name="ChooseBtn" Content="..." Width="23" Margin="5" VerticalAlignment="Center" Click="ChooseBtn_Click" />
+            </WrapPanel>
+            <WrapPanel Height="34">
+                <Button x:Name="OkBtn" Content="Ok" Width="85" Height="21" Margin="3" VerticalAlignment="Center" Click="OkBtn_Click"/>
+                <Button x:Name="CancelBtn" Content="Cancel" Width="85" Height="21" Margin="3" VerticalAlignment="Center" IsCancel="True" Click="CancelBtn_Click"/>
+            </WrapPanel>
+        </StackPanel>
+
+    </Grid>
+</Window>
