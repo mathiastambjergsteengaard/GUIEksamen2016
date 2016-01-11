@@ -34,15 +34,16 @@
             <Label x:Name="FLabel" Content="Name:" Width="45" Height="41"/>
             <Label x:Name="label1_Copy" Content="{Binding Path=Name}" Width="116" Height="41" />
             <Label x:Name="label1_Copy1" Content="Points:" Width="43" Height="41" />
-            <Label x:Name="label1_Copy2" Content="{Binding Path=Points}" Width="58" Height="41" />
+            <Label x:Name="PointLabel" Content="{Binding Path=Points}" Width="58" Height="41" />
+            <Button x:Name="button" Content="Stop Quiz" Width="75" Margin="7" Click="button_Click"/>
         </WrapPanel>
         <StackPanel Height="92" Margin="185,10,6,0" VerticalAlignment="Top" Orientation="Horizontal">
-            <Button x:Name="ABtn" Content="A" Width="75" Margin="10"/>
-            <Button x:Name="BBtn" Content="B" Width="75" Margin="10"/>
+            <Button x:Name="ABtn" Content="A" Width="75" Margin="10" Click="ABtn_Click"/>
+            <Button x:Name="BBtn" Content="B" Width="75" Margin="10" Click="BBtn_Click"/>
         </StackPanel>
         <StackPanel Height="92" Margin="185,107,6,0" VerticalAlignment="Top" Orientation="Horizontal">
-            <Button x:Name="CBtn" Content="C" Width="75" Margin="10"/>
-            <Button x:Name="DBtn" Content="D" Width="75" Margin="10"/>
+            <Button x:Name="CBtn" Content="C" Width="75" Margin="10" Click="CBtn_Click"/>
+            <Button x:Name="DBtn" Content="D" Width="75" Margin="10" Click="DBtn_Click"/>
         </StackPanel>
 
     </Grid>

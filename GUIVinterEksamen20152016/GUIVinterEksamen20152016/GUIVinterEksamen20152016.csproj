@@ -63,6 +63,9 @@
     <Compile Include="ChooseFileDialog.xaml.cs">
       <DependentUpon>ChooseFileDialog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EndView.xaml.cs">
+      <DependentUpon>EndView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FileDeserializer.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Question.cs" />
@@ -72,6 +75,10 @@
       <DependentUpon>QuizView.xaml</DependentUpon>
     </Compile>
     <Page Include="ChooseFileDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EndView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -20,5 +20,29 @@ namespace GUIVinterEksamen20152016
 
         public int localCounter { get; set; }
         public int Counter { get; set; }
+
+        public int HandleAnswer(QuizView.CurrentQuestion question, string answer)
+        {
+            if (question.RightAnswer == answer)
+                return 0;
+            if (localCounter == 0)
+            {
+                localCounter++;
+                return 2;
+            }
+            if (localCounter == 1)
+            {
+                localCounter++;
+                return 2;
+            }
+            if (localCounter == 2)
+            {
+                localCounter = 0;
+                return 4;
+            }
+            return 0;
+        }
+
+        
     }
 }
