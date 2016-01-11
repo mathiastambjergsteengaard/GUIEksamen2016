@@ -5,11 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUIVinterEksamen20152016"
         mc:Ignorable="d"
-        Title="EndView" Height="300" Width="327.746">
+        Title="EndView" Height="268.5" Width="327.746">
+    <Grid HorizontalAlignment="Left" Width="318" Margin="0,0,0,3">
+        <Image x:Name="image" Source="Resources/PandaPic.jpg" Margin="0,0,0,-5"/>
 
-    <StackPanel HorizontalAlignment="Left" Margin="0,10,0,3" Width="318">
-        <Button x:Name="label" Content="Press Anywhere to continue" Margin="10,10,10,8" RenderTransformOrigin="0.497,-0.228" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" Height="236" Width="298" Opacity="0" Click="Label_OnClick"/>
-
-    </StackPanel>
-
+        <Button x:Name="button" Margin="154,178,30,10" Click="button_Click" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+    </Grid>
 </Window>

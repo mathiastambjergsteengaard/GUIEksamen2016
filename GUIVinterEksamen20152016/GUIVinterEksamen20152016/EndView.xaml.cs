@@ -19,12 +19,15 @@ namespace GUIVinterEksamen20152016
     /// </summary>
     public partial class EndView : Window
     {
-        public EndView()
+        public EndView(int points)
         {
             InitializeComponent();
+
+            button.Content = "You got " + points + " Points\nPress here to continue";
         }
 
-        private void Label_OnClick(object sender, RoutedEventArgs e)
+
+        private void button_Click(object sender, RoutedEventArgs e)
         {
             var window = new MainWindow();
             window.Show();

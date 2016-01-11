@@ -57,7 +57,7 @@ namespace GUIVinterEksamen20152016
             dlg.InitialDirectory = FilePath;
             if (dlg.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-               FilePath = dlg.FileName;
+                FilePath = dlg.FileName;
             }
         }
 
@@ -65,7 +65,7 @@ namespace GUIVinterEksamen20152016
         {
             if(FilePathTbx.Text != "")
             Properties.Settings.Default.FilePath = FilePathTbx.Text;
-            Close();
+            this.Close();
         }
 
         private void CancelBtn_Click(object sender, RoutedEventArgs e)

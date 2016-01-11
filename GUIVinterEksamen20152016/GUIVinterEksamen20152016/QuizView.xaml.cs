@@ -35,7 +35,7 @@ namespace GUIVinterEksamen20152016
         
         Quiz quiz = new Quiz();
 
-        CurrentQuestion currentQuestion = new CurrentQuestion();
+        QuizView.CurrentQuestion currentQuestion = new CurrentQuestion();
 
         QuizMaster quizMaster = new QuizMaster();
 
@@ -56,14 +56,15 @@ namespace GUIVinterEksamen20152016
             Points += point;
             if(point == 4 || point == 0)
             {
-                if (quizMaster.Counter != quiz.Count)
+                quizMaster.localCounter = 0;
+                if (quizMaster.Counter != quiz.Count-1)
                 {
                     quizMaster.NewQuestion(currentQuestion, quiz[++quizMaster.Counter]);
                 }
                 else
                 {
-                    var window = new EndView();
-                    window.WindowState = WindowState.Maximized;
+                    var window = new EndView(Points);
+                    //window.WindowState = WindowState.Maximized;
                     window.Show();
                     Close();
                 }
@@ -72,17 +73,20 @@ namespace GUIVinterEksamen20152016
 
         private void BBtn_Click(object sender, RoutedEventArgs e)
         {
+            
             int point = quizMaster.HandleAnswer(currentQuestion, "B");
+            Points += point;
             if (point == 4 || point == 0)
             {
+                quizMaster.localCounter = 0;
                 if (quizMaster.Counter != quiz.Count-1)
                 {
                     quizMaster.NewQuestion(currentQuestion, quiz[++quizMaster.Counter]);
                 }
                 else
                 {
-                    var window = new EndView();
-                    window.WindowState = WindowState.Maximized;
+                    var window = new EndView(Points);
+                    //window.WindowState = WindowState.Maximized;
                     window.Show();
                     Close();
                 }
@@ -95,14 +99,15 @@ namespace GUIVinterEksamen20152016
             Points += point;
             if (point == 4 || point == 0)
             {
-                if (quizMaster.Counter != quiz.Count)
+                quizMaster.localCounter = 0;
+                if (quizMaster.Counter != quiz.Count-1)
                 {
                     quizMaster.NewQuestion(currentQuestion, quiz[++quizMaster.Counter]);
                 }
                 else
                 {
-                    var window = new EndView();
-                    window.WindowState = WindowState.Maximized;
+                    var window = new EndView(Points);
+                    //window.WindowState = WindowState.Maximized;
                     window.Show();
                     Close();
                 }
@@ -115,14 +120,16 @@ namespace GUIVinterEksamen20152016
             Points += point;
             if (point == 4 || point == 0)
             {
-                if (quizMaster.Counter != quiz.Count)
+                quizMaster.localCounter = 0;
+                if (quizMaster.Counter != quiz.Count-1)
                 {
                     quizMaster.NewQuestion(currentQuestion, quiz[++quizMaster.Counter]);
+                    
                 }
                 else
                 {
-                    var window = new EndView();
-                    window.WindowState = WindowState.Maximized;
+                    var window = new EndView(Points);
+                    //window.WindowState = WindowState.Maximized;
                     window.Show();
                     Close();
                 }
