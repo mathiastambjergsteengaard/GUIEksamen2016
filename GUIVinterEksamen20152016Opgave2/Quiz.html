@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>IFAT Quiz</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        
+        <h1>Reverse Quiz</h1>
+        <h2>Many points is not a good thing - See how few you can get</h2>
+        
+        <div id="question1">
+            <p>Hvilken af følgende symbol/navn-kombination af grundstoffer er forkert?</p>
+            <ul>
+            <li>C/carbon</li>
+            <li>N/nitrogen</li>
+            <li>F/fluor</li>
+            <li>B/barium</li>  
+		</ul>
+        </div>
+        <div id="question2" style="display:none">
+            <p>En terning med sider på 30 mm har en masse på 108 gram. Hvad er densiteten
+i g/cm3?</p>
+            <ul>
+            <li>0,004</li>
+            <li>4</li>
+            <li>12</li>
+            <li>36</li>  
+		</ul>
+        </div>
+        <div id="Buttons">
+            <button type="button" onclick="HandleA()">A</button>
+            <button type="button" onclick="HandleB()">B</button>
+            <button type="button" onclick="HandleC()">C</button>
+            <button type="button" onclick="HandleD()">D</button>
+        </div>
+        <div >
+            <p id="Pointdiv">Points: </p>
+        </div>
+        <script src="script.js"></script>
+        
+    </body>
+</html>
