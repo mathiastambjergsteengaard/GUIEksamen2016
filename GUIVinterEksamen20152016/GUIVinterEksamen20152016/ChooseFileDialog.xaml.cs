@@ -65,7 +65,7 @@ namespace GUIVinterEksamen20152016
         {
             if(FilePathTbx.Text != "")
             Properties.Settings.Default.FilePath = FilePathTbx.Text;
-            this.Close();
+            Close();
         }
 
         private void CancelBtn_Click(object sender, RoutedEventArgs e)

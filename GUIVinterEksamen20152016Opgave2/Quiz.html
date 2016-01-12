@@ -5,31 +5,22 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>IFAT Quiz</title>
-        <meta name="description" content="An interactive getting started guide for Brackets.">
         <link rel="stylesheet" href="main.css">
     </head>
-    <body>
-        
+    <body onload="OnLoad()">
+        <div id="content">
         <h1>Reverse Quiz</h1>
         <h2>Many points is not a good thing - See how few you can get</h2>
         
-        <div id="question1">
-            <p>Hvilken af følgende symbol/navn-kombination af grundstoffer er forkert?</p>
+        <button type="button" id="startbtn" onclick="StartQuiz()">Start Quiz</button>
+        
+        <div >
+            <p id="question" class=QuestionDiv></p>
             <ul>
-            <li>C/carbon</li>
-            <li>N/nitrogen</li>
-            <li>F/fluor</li>
-            <li>B/barium</li>  
-		</ul>
-        </div>
-        <div id="question2" style="display:none">
-            <p>En terning med sider på 30 mm har en masse på 108 gram. Hvad er densiteten
-i g/cm3?</p>
-            <ul>
-            <li>0,004</li>
-            <li>4</li>
-            <li>12</li>
-            <li>36</li>  
+            <li id="A" class=QuestionDiv></li>
+            <li id="B" class=QuestionDiv></li>
+            <li id="C" class=QuestionDiv></li>
+            <li id="D" class=QuestionDiv></li>  
 		</ul>
         </div>
         <div id="Buttons">
@@ -39,9 +30,10 @@ i g/cm3?</p>
             <button type="button" onclick="HandleD()">D</button>
         </div>
         <div >
-            <p id="Pointdiv">Points: </p>
+            <p class=QuestionDiv>Points:<b id="Pointdiv" class=QuestionDiv>0</b></p>
+            <button type="button" class=QuestionDiv  onclick="Back()">Back</button>
         </div>
         <script src="script.js"></script>
-        
+        </div>
     </body>
 </html>

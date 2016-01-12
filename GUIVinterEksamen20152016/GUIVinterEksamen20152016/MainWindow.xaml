@@ -29,5 +29,21 @@
             <Button x:Name="button" Content="Choose Quiz File" Width="120" Height="35" Margin="5" VerticalAlignment="Center" Click="button_Click"/>
             <Button x:Name="button_Copy" Content="Start Quiz" Width="120" Height="35" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="5" Click="button_Copy_Click" />
         </WrapPanel>
+
+
+        <Canvas Grid.Column="1" Margin="138,0,10,10" Grid.Row="5" Grid.RowSpan="2">
+            <Ellipse Grid.Column="1" Fill="Yellow" Grid.Row="5" Stroke="Black" Grid.RowSpan="2" Height="141" Canvas.Left="29" Width="125"/>
+            <Ellipse Grid.Column="1" Fill="Black" HorizontalAlignment="Left" Height="33" Grid.Row="6" Stroke="Black" VerticalAlignment="Top" Width="27" RenderTransformOrigin="-0.071,-2.078" Canvas.Left="52" Canvas.Top="30"/>
+            <Ellipse Grid.Column="1" Fill="Black" HorizontalAlignment="Left" Height="33" Grid.Row="6" Stroke="Black" VerticalAlignment="Top" Width="27" RenderTransformOrigin="-0.071,-2.078" Canvas.Left="102" Canvas.Top="30"/>
+            <Path Stroke="Black" StrokeThickness="3">
+                <Path.Data>
+                    <PathGeometry>
+                        <PathFigure IsClosed="False" StartPoint="50,95" >
+                            <ArcSegment Point="130,95" Size="150,400" />
+                        </PathFigure>
+                    </PathGeometry>
+                </Path.Data>
+            </Path>
+        </Canvas>
     </Grid>
 </Window>
